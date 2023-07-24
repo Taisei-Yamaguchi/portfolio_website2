@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(40, 39, 39);
+}
+
 header {
   position: absolute;
   top: 0;
@@ -5,7 +9,7 @@ header {
   width: 100%;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
-  background-color: aqua;
+  background-color: rgb(78, 85, 85);
   height: 100px;
 }
 header .home-title {
@@ -17,6 +21,9 @@ header .home-title {
 header .home-title h1 a {
   text-decoration: none;
   color: white;
+}
+header .home-title h1 a:hover {
+  color: rgb(168, 168, 168);
 }
 header .home-title .main-nav {
   width: 45%;
@@ -31,6 +38,53 @@ header .home-title .main-nav li {
 header .home-title .main-nav li a {
   font-size: 10px;
   text-decoration: none;
+  color: white;
+}
+header .home-title .main-nav li a:hover {
+  color: rgb(168, 168, 168);
+}
+header .home-title .nav-bar {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  header .home-title .main-nav {
+    display: none;
+  }
+  header .home-title .nav-bar {
+    display: flex;
+  }
+  header .home-title .nav-bar:hover {
+    background-color: rgb(168, 168, 168);
+    cursor: pointer;
+  }
+}
+header .main-nav-mobile {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  header .main-nav-mobile {
+    display: none;
+  }
+  header .main-nav-mobile.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    position: relative;
+    margin-top: 0;
+    margin-left: 50%;
+    background-color: rgb(78, 85, 85);
+  }
+  header .main-nav-mobile.show li {
+    list-style: none;
+  }
+  header .main-nav-mobile.show li a {
+    text-decoration: none;
+    color: white;
+  }
+  header .main-nav-mobile.show li a:hover {
+    color: rgb(168, 168, 168);
+  }
 }
 
 footer {

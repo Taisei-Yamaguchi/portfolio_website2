@@ -1,4 +1,12 @@
+// breakpoint 750px
+$header-color:rgb(78, 85, 85);
+$header-link-hover:rgb(168, 168, 168);
+$header-link:white;
 
+body{
+  background-color: rgb(40, 39, 39);
+
+}
 // header
 header{
     position:absolute;
@@ -7,7 +15,7 @@ header{
     width:100%;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    background-color: aqua;
+    background-color: $header-color;
     height:100px;
 
     
@@ -20,7 +28,10 @@ header{
         h1{
             a{
                 text-decoration:none;
-                color:white;
+                color:$header-link;
+                &:hover{
+                  color:$header-link-hover
+                }
             }
         }
         .main-nav{
@@ -35,11 +46,69 @@ header{
                 a{
                     font-size: 10px;
                     text-decoration: none;
+                    color:$header-link;
+                    &:hover{
+                      color:$header-link-hover;
+                    }
                 }
-            }        
+            }
         }
-    }  
+
+        .nav-bar{
+          display:none;
+        }
+
+        @media screen and (max-width:750px){
+          .main-nav{
+            display:none;
+          }
+          .nav-bar{
+            display:flex;
+
+            &:hover{
+              background-color: $header-link-hover;
+              cursor: pointer;
+            }
+          }
+        }
+    }
+    
+    .main-nav-mobile{
+      display:none;
+    } 
+
+    @media screen and (max-width:750px){
+      .main-nav-mobile{
+        display:none;
+        &.show{
+          display:flex;
+          flex-direction: column;
+          justify-content: left;
+          text-align: left;
+          position: relative;
+          margin-top:0;
+          margin-left: 50%;
+          background-color: $header-color;
+          
+          li{
+            list-style: none;
+            a{
+              text-decoration: none;
+              color:white;
+              &:hover{
+                color:rgb(168, 168, 168);
+              }
+            }
+          }
+        }
+      }
+   
+    }
 }
+
+
+
+
 
 // footer
 footer {
