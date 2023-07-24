@@ -6,6 +6,7 @@ header {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   background-color: aqua;
+  height: 100px;
 }
 header .home-title {
   display: flex;
@@ -33,11 +34,65 @@ header .home-title .main-nav li a {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   background-color: #f1f1f1;
   text-align: center;
-  padding: 10px 0;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+footer .twitter-insta {
+  display: flex;
+}
+footer .facebook-linkedin {
+  display: flex;
+}
+footer .github-medium {
+  display: flex;
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .phone-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  footer .social .twitter-insta {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .social .facebook-linkedin {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .social .github-medium {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .social img {
+    width: 40px;
+  }
+}
+
+.main-container {
+  margin-top: 100px;
 }/*# sourceMappingURL=portfolio.css.map */
