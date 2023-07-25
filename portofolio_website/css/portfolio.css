@@ -342,4 +342,13 @@ footer .github-medium {
 }
 .skill-certification-content .skills .skill-info .skill-each-container .skill-each .skill-images img {
   height: 40px;
+}
+
+.background-content {
+  color: rgb(250, 203, 117);
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=portfolio.css.map */

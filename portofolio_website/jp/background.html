@@ -8,68 +8,91 @@
     </head>
 
     <body>
-        <div id="home2" class="big-bg2">
-            <header class="page-header wrapper">
-                <h1>Taisei's Portfolio</h1>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portofolio.html">portfolios</a></li>
-                        <li><a href="skill.html">Skills & Certificate</a></li>
-                        <li><a href="background.html">Backgrounds</a></li>
-                        <li><a href="hobby.html">Hobbies</a></li>
-                        <li><a href="goal.html">Goal</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="../en/background.html">English ver</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div><!--big-bg-->
-        <div class="background-content">
-            <div class="content3-info">
-                <h1>Background</h1>
-                <div class="education-info">
-                    <h2>Biography</h2>
-                    <ul>
-                        <li>誕生 (2001.3 日本茨城県)</li>
-                    </ul>
-                    <p>&nbsp;小学生の頃は、水泳、ピアノ、陸上などいろいろな習い事をしていた。
-                        <br>中学校では陸上を続けたかったが、陸上部がなかったため代わりにテニス部に入る。
-                        <br>高校では陸上部に入り、部活と勉強に青春をささげる。
-                        <br>第一志望で受かった大学でも、同様に部活と学業に精を出す。
-                    </p>
-                </div>
-                <div class="education-info">
-                    <h2>Education</h2>
-                    <ul>
-                        <li>茨城県立土浦第一高等学校 普通科 (2016.4~2019.3)</li>
-                        <li>筑波大学 生命環境学群 生物学類 (2019.4~2023.3)<br>
-                        3.77 GPA<br>
-                        TARAセンター 丹羽隆介教授研究室</li>
-                        <li>筑波大学大学院理工情報生命学術院生命地球科学研究群 生物学学位プログラム 博士前期 (2023.4~休学中)</li>
-                        <li>Cornerstone College web & mobil app development (2023.5~)</li>
-                    </ul>
-                    <p>&nbsp;筑波大学では、ショウジョウバエを用いて、ドーパミンと腸内分泌ホルモンの関連の研究を行った。
-                    <br>&nbsp;大学院進学後は研究ではなくエンジニアの道を目指すことを決意し、大学院を休学しバンクーバーに留学する。
-                    主にweb developmentをフロントエンドからバックエンドまで幅広く学んでいる。
-                    </p>
-                </div>
-                <div class="work-info">
-                    <h2>Work Experience</h2>
-                    <ul>
-                        <li>Burrard Laptops (2023.6~)</li>
-                        <p>&nbsp;*エンジニアのインターンシップとして働いている。
-                            主に、CRMをsuitedashに統合するためのAPI構築に携わっている。</p>
-                    </ul>
+        <header>
+            <div class="home-title">
+                <h1><a href="index.html">Taisei</a></h1>
+                <!-- main-nav using when desktop -->
+                <ul class="main-nav">
+                    <li><a href="about-me.html">About me</a></li>
+                    <li><a href="deliverable.html">Deliverables</a></li>
+                    <li><a href="skill.html">Skills & Certification</a></li>
+                    <li><a href="background.html">Backgrounds</a></li>       
+                </ul>
+
+                <!-- nav-bar using when mobile -->
+                <div class="nav-bar" id="nav-bar">
+                    <img src="../images/bars_24.svg" width="50px">
                 </div>
             </div>
-        </div>
-       <footer>
-        <div class="wrapper">
-            <p><small>&copy; 2023 Taisei</small></p>
-        </div>
-       </footer>
-        
+            <ul class="main-nav-mobile" id="main-nav-mobile">
+                <li><a href="about-me.html">About me</a></li>
+                <li><a href="deliverable.html">Deliverables</a></li>
+                <li><a href="skill.html">Skills & Certification</a></li>
+                <li><a href="background.html">Backgrounds</a></li>
+            </ul>
 
+        </header>
+
+        <!-- main -->
+        <div class="main-container">
+            <div class="background-content">
+                <h1>Background</h1>
+                    <div class="education-work-container">
+                        <div class="education-info">
+                            <h2>Education</h2>
+                            <ul>
+                                <li>茨城県立土浦第一高等学校 普通科 (2016.4~2019.3)</li>
+                                <li>筑波大学 生命環境学群 生物学類 (2019.4~2023.3)<br>
+                                3.77 GPA<br>
+                                TARAセンター 丹羽隆介教授研究室</li>
+                                <li>筑波大学大学院理工情報生命学術院生命地球科学研究群 生物学学位プログラム 博士前期 (2023.4~休学中)</li>
+                                <li>Cornerstone College web & mobil app development (2023.5~)</li>
+                            </ul>
+                            <!-- <p>&nbsp;筑波大学では、ショウジョウバエを用いて、ドーパミンと腸内分泌ホルモンの関連の研究を行った。
+                            <br>&nbsp;大学院進学後は研究ではなくエンジニアの道を目指すことを決意し、大学院を休学しバンクーバーに留学する。
+                            主にweb developmentをフロントエンドからバックエンドまで幅広く学んでいる。
+                            </p> -->
+                        </div>
+                        
+                        <div class="work-info">
+                            <h2>Work Experience</h2>
+                            <ul>
+                                <li>Burrard Laptops (2023.6~)</li>
+                            </ul>
+                            <p>・エンジニアのインターンシップとして働いている。
+                                <br>・CRM統合のためのAPIリクエスト部分を作成。(Java, suitedash)
+                                <br>・mediaクエリを利用したmembershipリンクのdesign。(WordPress, scss)</p>
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
+        <!-- main end -->
+
+        <footer>
+            <div class="phone-email">
+                <p>phone:236-889-1029</p>
+                <p>email:aries0326taisei@gmail.com</p>
+            </div>
+            <div class="social">
+                <div class="twitter-insta">
+                    <a href="https://twitter.com/TaiseiYama15728" target="_blank"><img src="../images/twitter_logo.png" width="22px"></a>
+                    <a href="https://www.instagram.com/taisei.it" target="_blank"><img src="../images/Instagram_logo.png" width="22px"></a>
+                </div>
+                
+                <div class="facebook-linkedin">
+                    <a href="https://www.facebook.com/profile.php?id=100088238918707" target="_blank"><img src="../images/facebook_logo.png" width="22px"></a>
+                    <a href="https://www.linkedin.com/in/taisei-yamaguchi-8b2289272/" target="_blank"><img src="../images/linked_in_logo.png" width="22px"></a>
+                </div>
+                
+                <div class="github-medium">
+                    <a href="https://github.com/Taisei-Yamaguchi" target="_blank"><img src="../images/github-mark.png" width="22px"></a>
+                    <a href="https://medium.com/@aries0326taisei" target="_blank"><img src="../images/medium-icon.svg" width="22px"></a>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="../js/portofolio.js"></script>
     </body>
 </html>
+
