@@ -251,10 +251,95 @@ footer .github-medium {
 .deliverable-content .deliverables .deliverable-each p a:hover {
   color: rgb(168, 168, 168);
 }
-@media screen and (max-height: 750px) {
+@media screen and (max-width: 750px) {
   .deliverable-content .deliverables .deliverable-each .deliverable-image {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
+
+.skill-certification-content {
+  color: palegreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+.skill-certification-content .certification {
+  border-bottom: 3px double white; /* 上部に3pxの二重線を黒色で設定 */
+  border-right: none; /* 右側の境界線は非表示 */
+  border-top: none; /* 下側の境界線は非表示 */
+  border-left: none; /* 左側の境界線は非表示 */
+  display: flex;
+  flex-direction: column;
+}
+.skill-certification-content .certification h2 {
+  align-self: center;
+}
+.skill-certification-content .skills {
+  border-bottom: 3px double white; /* 上部に3pxの二重線を黒色で設定 */
+  border-right: none; /* 右側の境界線は非表示 */
+  border-top: none; /* 下側の境界線は非表示 */
+  border-left: none; /* 左側の境界線は非表示 */
+  display: flex;
+  flex-direction: column;
+  padding: 5% 2% 5% 2%;
+  width: 80%;
+}
+.skill-certification-content .skills h2 {
+  align-self: center;
+}
+.skill-certification-content .skills .skill-info {
+  padding: 1% 0 1% 0;
+  background-color: rgb(170, 159, 146);
+}
+.skill-certification-content .skills .skill-info .notation {
+  background-color: rgb(71, 70, 70);
+}
+.skill-certification-content .skills .skill-info .notation p {
+  font-size: 12px;
+}
+.skill-certification-content .skills .skill-info .notation ul li {
+  font-size: 12px;
+}
+.skill-certification-content .skills .skill-info .skill-each-container {
+  background-color: rgb(71, 70, 70);
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 750px) {
+  .skill-certification-content .skills .skill-info .skill-each-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1% 0 1% 0;
+  }
+}
+.skill-certification-content .skills .skill-info .skill-each-container .skill-each {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  width: 49%;
+  height: auto;
+  padding-bottom: 3%;
+}
+@media screen and (max-width: 750px) {
+  .skill-certification-content .skills .skill-info .skill-each-container .skill-each {
+    width: 100%;
+  }
+}
+.skill-certification-content .skills .skill-info .skill-each-container .skill-each h3 {
+  align-self: center;
+}
+.skill-certification-content .skills .skill-info .skill-each-container .skill-each .skill-images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.skill-certification-content .skills .skill-info .skill-each-container .skill-each .skill-images img {
+  height: 40px;
 }/*# sourceMappingURL=portfolio.css.map */

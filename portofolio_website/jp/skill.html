@@ -8,91 +8,173 @@
     </head>
 
     <body>
-        <div id="home2" class="big-bg2">
-            <header class="page-header wrapper">
-                <h1>Taisei's Portfolio</h1>
-                <nav>
-                    <ul class="main-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="portofolio.html">portfolios</a></li>
-                        <li><a href="skill.html">Skills & Certificate</a></li>
-                        <li><a href="background.html">Backgrounds</a></li>
-                        <li><a href="hobby.html">Hobbies</a></li>
-                        <li><a href="goal.html">Goal</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="../en/skill.html">English ver</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div><!--big-bg-->
+        <header>
+            <div class="home-title">
+                <h1><a href="index.html">Taisei</a></h1>
+                <!-- main-nav using when desktop -->
+                <ul class="main-nav">
+                    <li><a href="about-me.html">About me</a></li>
+                    <li><a href="deliverable.html">Deliverables</a></li>
+                    <li><a href="skill.html">Skills & Certification</a></li>
+                    <li><a href="background.html">Backgrounds</a></li>       
+                </ul>
 
-        <div class="content2">
-            <div class="content2-info">
-                <div class="skill-info">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>PHP</li>
-                        <li>Laravel</li>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>MySQL</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>AWS</li>
-                        <li>Visual Studio Code</li>
-                    </ul>
-                </div>
-                <div class="certificate-info">
-                    <h2>Certificates</h2>
-                    <ul>
-                        <li>普通自動車免許</li>
-                        <li>FP3級</li>
-                        <li>日商簿記検定2級</li>
-                        <li>TOEIC 870</li>
-                        <li>宅地建物取引士試験合格</li>
-                        
-                    </ul>
+                <!-- nav-bar using when mobile -->
+                <div class="nav-bar" id="nav-bar">
+                    <img src="../images/bars_24.svg" width="50px">
                 </div>
             </div>
+            <ul class="main-nav-mobile" id="main-nav-mobile">
+                <li><a href="about-me.html">About me</a></li>
+                <li><a href="deliverable.html">Deliverables</a></li>
+                <li><a href="skill.html">Skills & Certification</a></li>
+                <li><a href="background.html">Backgrounds</a></li>
+            </ul>
 
-            <div class="comment">
-                <div class="comment-info">
-                    <h3>Comment</h3>
-                    <p>&nbsp;いろいろな資格とスキルを持っています。
-                        大学2、3年生のとき、
-                        コロナウイルスにより授業がリモートとなり暇を持て余していたため、
-                        いろんな分野の勉強をしていたついでに簿記や宅建を取得しました。</p>
-                    <p>&nbsp;スキルについては、webエンジニアを志した大学4年生から学習を開始し、
-                        現在も続けております。基本的にこれらのスキルを駆使して、
-                        ポートフォリオとなるwebアプリケーションを作成、公開しています。</p>
-                </div>
+        </header>
+
+        <!-- main -->
+        <div class="main-container">
             
+        <div class="skill-certification-content">
+            <div class="certification">
+                <h2>Certification</h2>
+                <ul>
+                    <li>普通自動車免許</li>
+                    <li>FP3級</li>
+                    <li>日商簿記検定2級</li>
+                    <li>TOEIC 870</li>
+                    <li>宅地建物取引士試験合格</li>    
+                </ul>
             </div>
-        </div>
-        <br>
-        <br>
-        <div class="skill-logos">
-            <img src="../images/html-5.svg">
-            <img src="../images/css-3.svg">
-            <img src="../images/visual-studio-code.svg">
-            <img src="../images/php.svg">
-            <img src="../images/laravel.svg">
-            <img src="../images/javascript.svg">
-            <img src="../images/mysql.svg">
-            <img src="../images/git-icon.svg">
-            <img src="../images/github-octocat.svg">
-            <img src="../images/aws-ec2.svg">
-            <img src="../images/aws-lightsail.svg">
+
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-info">
+                    <div class="notation">
+                        <p>*スキルlevelの指標</p>
+                        <ul>
+                            <li>★　　　　：独学や学校で習う程度。実装経験なし</li>
+                            <li>★★　　　：サポートを受けながら実装できる</li>
+                            <li>★★★　　：サポートなしで実装</li>
+                            <li>★★★★　：自信で実装し、オリジナルの成果物を作成</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-each-container">
+                        <div class="skill-each">
+                            <h3>Programming Language</h3>
+                            <ul>
+                                <li>PHP・・・・・★★★★</li>
+                                <li>Java・・・・★★</li>
+                                <li>Python・・・★</li>
+                                <li>JavaScript・・・★★★★</li>
+                            </ul>
+                            <div class="skill-images">
+                                <img src="../images/php.svg">
+                                <img src="../images/javascript.svg">
+                                <img src="../images/java.svg">
+                                <img src="../images/python.svg">
+                            </div>
+                        </div>
+
+                        <div class="skill-each">
+                            <h3>Framework</h3>
+                            <ul>
+                                <li>Laravel・・・・・★★★★</li>
+                                <li>Vue.js・・・・★</li>
+                            </ul>
+                            <div class="skill-images">
+                                <img src="../images/laravel.svg">
+                                <img src="../images/vue.svg">
+                            </div>
+                        </div>
+    
+                        <div class="skill-each">
+                            <h3>MarkUp</h3>
+                            <ul>
+                                <li>HTML・・・★★★★</li>
+                                <li>css・・・★★★★</li>
+                                <li>scss・・・★★★</li>
+                            </ul>
+                            <div class="skill-images">
+                                <img src="../images/html-5.svg">
+                                <img src="../images//css-3.svg">
+                            </div>
+                        </div>
+    
+                        <div class="skill-each">
+                            <h3>DataBase</h3>
+                            <ul>
+                                <li>MySQL・・・★★★★</li>
+                            </ul>
+                            <div class="skill-images">
+                                <img src="../images/mysql.svg">
+                            </div>
+                        </div>
+    
+                        <div class="skill-each">
+                            <h3>Other tool</h3>
+                            <ul>
+                                <li>Git</li>
+                                <li>GitHub</li>
+                                <li>AWS (lighsail, ec2)</li>
+                                <li>Visual Studio Code</li>
+                            </ul>
+
+                            <div class="skill-images">
+                                <img src="../images/git-icon.svg">
+                                <img src="../images/github-octocat.svg">
+                                <img src="../images/aws-ec2.svg">
+                                <img src="../images/aws-lightsail.svg">
+                                <img src="../images/visual-studio-code.svg">
+                            </div>
+                        </div>
+    
+                        <div class="skill-each">
+                            <h3>Foreign Language</h3>
+                            <ul>
+                                <li>English・・・Business 中級</li>
+                                <li>日本語・・・・Native Level</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+
+
         </div>
         <br>
         <br>
         
+        </div>
+        <!-- main end -->
+
         <footer>
-            <div class="wrapper">
-                <p><small>&copy; 2023 Taisei</small></p>
+            <div class="phone-email">
+                <p>phone:236-889-1029</p>
+                <p>email:aries0326taisei@gmail.com</p>
+            </div>
+            <div class="social">
+                <div class="twitter-insta">
+                    <a href="https://twitter.com/TaiseiYama15728" target="_blank"><img src="../images/twitter_logo.png" width="22px"></a>
+                    <a href="https://www.instagram.com/taisei.it" target="_blank"><img src="../images/Instagram_logo.png" width="22px"></a>
+                </div>
+                
+                <div class="facebook-linkedin">
+                    <a href="https://www.facebook.com/profile.php?id=100088238918707" target="_blank"><img src="../images/facebook_logo.png" width="22px"></a>
+                    <a href="https://www.linkedin.com/in/taisei-yamaguchi-8b2289272/" target="_blank"><img src="../images/linked_in_logo.png" width="22px"></a>
+                </div>
+                
+                <div class="github-medium">
+                    <a href="https://github.com/Taisei-Yamaguchi" target="_blank"><img src="../images/github-mark.png" width="22px"></a>
+                    <a href="https://medium.com/@aries0326taisei" target="_blank"><img src="../images/medium-icon.svg" width="22px"></a>
+                </div>
+                
             </div>
         </footer>
-
+        <script src="../js/portofolio.js"></script>
     </body>
 </html>
+
