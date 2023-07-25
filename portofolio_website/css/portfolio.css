@@ -221,4 +221,40 @@ footer .github-medium {
   .home-container .ribbon-box h1 {
     font-size: 20px;
   }
+}
+
+.deliverable-content {
+  color: rgb(176, 234, 255);
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.deliverable-content .deliverables {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deliverable-content .deliverables .deliverable-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+  border-top: 3px double white; /* 上部に3pxの二重線を黒色で設定 */
+  border-right: none; /* 右側の境界線は非表示 */
+  border-bottom: none; /* 下側の境界線は非表示 */
+  border-left: none; /* 左側の境界線は非表示 */
+}
+.deliverable-content .deliverables .deliverable-each p a {
+  text-decoration: none;
+  color: white;
+}
+.deliverable-content .deliverables .deliverable-each p a:hover {
+  color: rgb(168, 168, 168);
+}
+@media screen and (max-height: 750px) {
+  .deliverable-content .deliverables .deliverable-each .deliverable-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

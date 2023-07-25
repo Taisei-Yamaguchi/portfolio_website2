@@ -253,8 +253,52 @@ footer {
         font-size: 20px;
         
       }
-    }
+    }    
+  }
+}
 
-    
+
+// deliverable
+.deliverable-content{
+  color:rgb(176, 234, 255);
+  margin-left: 5%;
+  margin-right: 5%;
+
+  .deliverables{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .deliverable-each{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+
+      border-top: 3px double white; /* 上部に3pxの二重線を黒色で設定 */
+      border-right: none; /* 右側の境界線は非表示 */
+      border-bottom: none; /* 下側の境界線は非表示 */
+      border-left: none; /* 左側の境界線は非表示 */
+
+      p{
+        a{
+          text-decoration: none;
+          color:white;
+          &:hover{
+            color:$header-link-hover
+          }
+        }
+      }
+
+      @media screen and (max-height:750px){
+        .deliverable-image{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+    }
   }
 }
